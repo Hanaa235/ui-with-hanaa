@@ -28,6 +28,7 @@
       background: #0A0E27;
       color: #FFFFFF;
       position: relative;
+      text-align: center; /* Center text globally */
     }
     
     #app-wrapper {
@@ -137,6 +138,9 @@
     .hero-text {
       position: relative;
       z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center items in flex container */
     }
     
     .hero-label {
@@ -176,7 +180,7 @@
     
     .hero-title {
       font-family: 'Playfair Display', serif;
-      font-size: 5rem;
+      font-size: 4rem; /* Reduced from 5rem */
       font-weight: 900;
       line-height: 1.1;
       margin-bottom: 1.5rem;
@@ -188,7 +192,7 @@
     }
     
     .hero-subtitle {
-      font-size: 1.5rem;
+      font-size: 1.25rem; /* Reduced from 1.5rem */
       color: #6366F1;
       font-weight: 600;
       margin-bottom: 1.5rem;
@@ -196,7 +200,7 @@
     }
     
     .hero-description {
-      font-size: 1.125rem;
+      font-size: 1rem; /* Reduced from 1.125rem */
       line-height: 1.8;
       color: #94A3B8;
       margin-bottom: 3rem;
@@ -208,12 +212,12 @@
       display: inline-flex;
       align-items: center;
       gap: 1rem;
-      padding: 1.25rem 3rem;
+      padding: 1rem 2.5rem; /* Reduced padding */
       background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
       border: none;
       border-radius: 50px;
       color: white;
-      font-size: 1.125rem;
+      font-size: 1rem; /* Reduced from 1.125rem */
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -278,8 +282,8 @@
     
     .phone-mockup {
       position: relative;
-      width: 320px;
-      height: 650px;
+      width: 300px; /* Reduced from 320px */
+      height: 600px; /* Reduced from 650px */
       background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
       border-radius: 50px;
       padding: 15px;
@@ -292,7 +296,7 @@
     .phone-screen {
       width: 100%;
       height: 100%;
-     background: url('/Users/mohamed/Desktop/ux || ui/coff/image/pic.jpeg') center/cover no-repeat;
+     background: url('image/pic.jpeg') center/cover no-repeat;
       border-radius: 40px;
       position: relative;
       overflow: hidden;
@@ -323,8 +327,8 @@
     
     .floating-icon {
       position: absolute;
-      width: 60px;
-      height: 60px;
+      width: 50px; /* Reduced from 60px */
+      height: 50px; /* Reduced from 60px */
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.2);
@@ -332,7 +336,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       animation: floatIcon 3s ease-in-out infinite;
     }
     
@@ -376,7 +380,7 @@
     }
     
     .screen-emoji {
-      font-size: 4rem;
+      font-size: 3rem; /* Reduced from 4rem */
       margin-bottom: 1rem;
       animation: bounce 2s ease-in-out infinite;
     }
@@ -391,14 +395,14 @@
     }
     
     .screen-title {
-      font-size: 1.5rem;
+      font-size: 1.25rem; /* Reduced from 1.5rem */
       font-weight: 700;
       color: white;
       margin-bottom: 0.5rem;
     }
     
     .screen-subtitle {
-      font-size: 0.875rem;
+      font-size: 0.75rem; /* Reduced from 0.875rem */
       color: rgba(255, 255, 255, 0.7);
     }
     
@@ -412,11 +416,17 @@
     .section-container {
       max-width: 1400px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     .section-header {
       text-align: center;
       margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     .section-label {
@@ -433,7 +443,7 @@
     
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
+      font-size: 3rem; /* Reduced from 3.5rem */
       font-weight: 900;
       line-height: 1.2;
       background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%);
@@ -444,7 +454,7 @@
     }
     
     .section-description {
-      font-size: 1.25rem;
+      font-size: 1.125rem; /* Reduced from 1.25rem */
       color: #94A3B8;
       max-width: 700px;
       margin: 0 auto;
@@ -456,6 +466,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  width: 100%;
 }
 
 /* responsive for tablets and mobiles */
@@ -472,6 +483,7 @@
       grid-template-columns: repeat(2,1fr);
       gap: 2rem;
       margin-top: 3rem;
+      width: 100%;
     }
 
     .contact-grid {
@@ -479,16 +491,19 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 2.5rem;
       margin-top: 4rem;
+      width: 100%;
     }
 
     .about-image {
       position: relative;
+      display: flex;
+      justify-content: center;
     }
     
     .image-frame {
       position: relative;
-      width: 500px;
-      height: 600px;
+      width: 400px; /* Reduced from 500px */
+      height: 500px; /* Reduced from 600px */
       background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
       border-radius: 30px;
       padding: 4px;
@@ -509,7 +524,7 @@
     }
     
     .placeholder-icon {
-      font-size: 8rem;
+      font-size: 6rem; /* Reduced from 8rem */
       filter: grayscale(100%) opacity(0.3);
     }
     
@@ -530,10 +545,13 @@
     
     .about-text {
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     .about-description {
-      font-size: 1.125rem;
+      font-size: 1rem; /* Reduced from 1.125rem */
       line-height: 1.8;
       color: #94A3B8;
       margin-bottom: 2rem;
@@ -543,12 +561,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
+  width: 100%;
 }
     .stat-card {
       background: rgba(99, 102, 241, 0.05);
       border: 1px solid rgba(99, 102, 241, 0.2);
       border-radius: 20px;
-      padding: 2rem;
+      padding: 1.5rem; /* Reduced from 2rem */
       text-align: center;
       transition: all 0.3s ease;
     }
@@ -561,7 +580,7 @@
     
     .stat-number {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
+      font-size: 2.5rem; /* Reduced from 3rem */
       font-weight: 900;
       background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
       -webkit-background-clip: text;
@@ -571,7 +590,7 @@
     }
     
     .stat-label {
-      font-size: 1rem;
+      font-size: 0.875rem; /* Reduced from 1rem */
       color: #94A3B8;
       font-weight: 500;
     }
@@ -592,6 +611,7 @@
       overflow: hidden;
       transition: all 0.4s ease;
       cursor: pointer;
+      text-align: center;
     }
     
     .project-card:hover {
@@ -602,7 +622,7 @@
     
     .project-image {
       width: 100%;
-      height: 350px;
+      height: 300px; /* Reduced from 350px */
       background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
       display: flex;
       align-items: center;
@@ -628,7 +648,7 @@
     }
     
     .project-emoji {
-      font-size: 5rem;
+      font-size: 4rem; /* Reduced from 5rem */
       position: relative;
       z-index: 1;
       transition: transform 0.4s ease;
@@ -654,18 +674,21 @@
     }
     
     .project-content {
-      padding: 2.5rem;
+      padding: 2rem; /* Reduced from 2.5rem */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     .project-title {
-      font-size: 1.75rem;
+      font-size: 1.5rem; /* Reduced from 1.75rem */
       font-weight: 700;
       color: white;
       margin-bottom: 1rem;
     }
     
     .project-description {
-      font-size: 1rem;
+      font-size: 0.95rem; /* Reduced from 1rem */
       line-height: 1.7;
       color: #94A3B8;
       margin-bottom: 1.5rem;
@@ -677,7 +700,7 @@
       gap: 0.5rem;
       color: #6366F1;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.9rem; /* Reduced from 0.95rem */
       text-decoration: none;
       transition: gap 0.3s ease;
     }
@@ -690,17 +713,18 @@
     .skills-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
+      gap: 1rem; /* Reduced from 1.5rem */
       justify-content: center;
       margin-top: 4rem;
+      max-width: 1000px;
     }
     
     .skill-tag {
-      padding: 1rem 2rem;
+      padding: 0.75rem 1.5rem; /* Reduced from 1rem 2rem */
       background: rgba(99, 102, 241, 0.1);
       border: 1px solid rgba(99, 102, 241, 0.3);
       border-radius: 50px;
-      font-size: 1rem;
+      font-size: 0.9rem; /* Reduced from 1rem */
       font-weight: 500;
       color: #A5B4FC;
       transition: all 0.3s ease;
@@ -716,22 +740,17 @@
     }
     
     /* Contact Section */
-   .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  margin-top: 4rem;
-}
-
     .contact-card {
       background: rgba(30, 41, 59, 0.5);
       border: 1px solid rgba(99, 102, 241, 0.2);
       border-radius: 25px;
-      padding: 2.5rem;
+      padding: 2rem; /* Reduced from 2.5rem */
       display: flex;
+      flex-direction: column; /* Stack vertically for centering */
       align-items: center;
-      gap: 1.5rem;
+      gap: 1rem;
       transition: all 0.3s ease;
+      text-align: center;
     }
     
     .contact-card:hover {
@@ -741,14 +760,14 @@
     }
     
     .contact-icon {
-      width: 60px;
-      height: 60px;
+      width: 50px; /* Reduced from 60px */
+      height: 50px; /* Reduced from 60px */
       background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
       border-radius: 15px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       flex-shrink: 0;
     }
     
@@ -757,15 +776,16 @@
     }
     
     .contact-label {
-      font-size: 0.875rem;
+      font-size: 0.8rem; /* Reduced from 0.875rem */
       color: #94A3B8;
       margin-bottom: 0.5rem;
     }
     
     .contact-value {
-      font-size: 1.125rem;
+      font-size: 1rem; /* Reduced from 1.125rem */
       font-weight: 600;
       color: white;
+      word-break: break-all;
     }
     
     /* Footer */
@@ -779,7 +799,7 @@
     
     .footer-text {
       color: #64748B;
-      font-size: 0.95rem;
+      font-size: 0.875rem; /* Reduced from 0.95rem */
     }
     
     /* Scroll Indicator */
@@ -797,15 +817,15 @@
     }
     
     .scroll-text {
-      font-size: 0.75rem;
+      font-size: 0.7rem; /* Reduced from 0.75rem */
       color: #64748B;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
     
     .scroll-arrow {
-      width: 30px;
-      height: 50px;
+      width: 25px; /* Reduced from 30px */
+      height: 45px; /* Reduced from 50px */
       border: 2px solid rgba(99, 102, 241, 0.5);
       border-radius: 20px;
       position: relative;
@@ -817,8 +837,8 @@
       top: 8px;
       left: 50%;
       transform: translateX(-50%);
-      width: 6px;
-      height: 6px;
+      width: 5px;
+      height: 5px;
       background: #6366F1;
       border-radius: 50%;
       animation: scrollDown 2s ease-in-out infinite;
@@ -830,7 +850,7 @@
         opacity: 1;
       }
       100% {
-        top: 32px;
+        top: 28px;
         opacity: 0;
       }
     }
@@ -844,7 +864,7 @@
       }
       
       .hero-title {
-        font-size: 3.5rem;
+        font-size: 3rem;
       }
       
       .device-showcase {
@@ -857,24 +877,24 @@
       
       .image-frame {
         width: 100%;
-        max-width: 400px;
-        height: 500px;
+        max-width: 350px;
+        height: 450px;
         margin: 0 auto;
       }
     }
     
     @media (max-width: 768px) {
       .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
       
       .section-title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
       
       .phone-mockup {
-        width: 280px;
-        height: 560px;
+        width: 260px;
+        height: 520px;
       }
       
       .stats-grid {
@@ -889,12 +909,12 @@
         gap: 2rem;
       }
       .hero-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin-bottom: 2rem;
       }
       .hero-cta {
-        padding: 1rem 2rem;
-        font-size: 1rem;
+        padding: 0.875rem 2rem;
+        font-size: 0.95rem;
         width: 100%;
         justify-content: center;
       }
@@ -905,7 +925,7 @@
         margin-bottom: 2rem;
       }
       .section-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
       .contact-grid {
         grid-template-columns: 1fr;
@@ -915,12 +935,11 @@
         padding: 1.5rem;
       }
       .contact-value {
-        font-size: 1rem;
-        word-break: break-all;
+        font-size: 0.95rem;
       }
       .orb {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
       }
     }
     
@@ -968,16 +987,16 @@
         <div class="phone-screen">
          <div class="screen-content">
           <div class="floating-icon">
-            <img src="/Users/mohamed/Desktop/ux || ui/coff/image/icon.png" alt="">
+            <img src="image/icon.png" alt="image">
           </div>
           <div class="floating-icon">
-            <img src="/Users/mohamed/Desktop/ux || ui/coff/image/iccon.png" alt="">
+            <img src="image/iccon.png" alt="image">
           </div>
           <div class="floating-icon">
-            <img src="/Users/mohamed/Desktop/ux || ui/coff/image/icccon.png" alt="">
+            <img src="image/icccon.png" alt="image">
           </div>
           <div class="floating-icon">
-            <img src="/Users/mohamed/Desktop/ux || ui/coff/image/iccccon.png" alt="">
+            <img src="image/iccccon.png" alt="image">
           </div>
          </div>
         </div>
@@ -996,7 +1015,7 @@
       <div class="about-image">
        <div class="image-frame">
       <div class="image-inner">
-  <img src="/Users/mohamed/Desktop/ux || ui/coff/image/picc.jpeg" alt="Hanaa Mahmoud" style="width: 100%; height: 100%; object-fit: cover; border-radius: 27px;">
+  <img src="image/picc.jpeg" alt="Hanaa Mahmoud" style="width: 100%; height: 100%; object-fit: cover; border-radius: 27px;">
 </div>
        </div>
       </div>
@@ -1129,7 +1148,7 @@
      <div class="contact-grid">
       <div class="contact-card">
        <div class="contact-icon">
-     <img src="/Users/mohamed/Desktop/ux || ui/coff/image/mailpic.png" alt="Email">
+     <img src="image/mailpic.png" alt="Email">
        </div>
        <div class="contact-info">
         <div class="contact-label">
@@ -1143,7 +1162,7 @@
       </div>
       <div class="contact-card">
        <div class="contact-icon">
-     <img src="/Users/mohamed/Desktop/ux || ui/coff/image/whatpic.png" alt="Email">
+     <img src="image/whatpic.png" alt="Email">
        </div>
        <div class="contact-info">
         <div class="contact-label">
